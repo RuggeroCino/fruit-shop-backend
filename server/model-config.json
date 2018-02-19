@@ -37,6 +37,15 @@
     "public": false
   },
   "Product": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "find": true,
+          "create": true
+        }
+      }
+    }
   }
 }
